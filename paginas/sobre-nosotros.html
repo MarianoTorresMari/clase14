@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es_AR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Mariano Torres Mari">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="shortcut icon" href="https://prowly-prod.s3.eu-west-1.amazonaws.com/uploads/5726/assets/73418/large_doctoralia-mktpl-symbol-turquoise.png" >
+    <title>Pagina Principal</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="/index.html"><img src="https://prowly-prod.s3.eu-west-1.amazonaws.com/uploads/5726/assets/73418/large_doctoralia-mktpl-symbol-turquoise.png" alt="logo de la Pagina"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="/index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./sobre-nosotros.html">Sobre nosotros</a>
+                  </li>
+                </ul>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <!-- Button trigger modal -->
+      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Iniciar Sesion
+      </button>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content bg-secondary-subtle">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Iniciar Sesion</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <section>
+                <form>
+                   <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label"
+                    >Usuario/Email</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    required
+                    maxlength="25"
+                    minlength="7"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label"
+                    >Contraseña</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="exampleInputPassword1"
+                    required
+                    maxlength="15"
+                    minlength="7"
+                  />
+                </div>
+                <div class="mb-3 d-flex justify-content-center">
+                  <button type="submit" class="btn bg-body-tertiary mt-3">Iniciar Sesion</button>
+                </div>
+              </form>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+                    </li>
+                     <li class="nav-item">
+                      <!-- Button trigger modal -->
+      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+        Registrarse
+      </button>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content bg-secondary-subtle">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Registrarse</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="container-fluid">
+                <form>
+                  <div class="row mb-3">
+                    <label for="usuario1" class="col-12 col-form-label">Usuario</label>
+                    <div class="col-12">
+                      <input type="text" class="form-control" id="usuario1"
+                      required
+                      maxlength="20"
+                      minlength="5"
+                      placeholder="mariano torres mari">
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label for="correo1" class="col-12 col-form-label">Email</label>
+                    <div class="col-12">
+                      <input type="email" class="form-control" id="correo1"
+                      required
+                      maxlength="25"
+                      min="10"
+                      placeholder="mariano@gmail.com">
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label for="contraseña1" class="col-12 col-form-label">Contraseña</label>
+                    <div class="col-12">
+                      <input type="password" class="form-control" id="contraseña1"
+                      required
+                      maxlength="10"
+                      minlength="7">
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label for="contraseña2" class="col-12 col-form-label">Repetir Contraseña</label>
+                    <div class="col-12">
+                      <input type="password" class="form-control" id="contraseña2"
+                      required
+                      maxlength="10"
+                      minlength="7">
+                    </div>
+                    <div class="boton d-flex justify-content-center">
+                    <button class="btn bg-body-tertiary mt-3">Crear cuenta</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <section><h2 class="text-center">BIENVENIDO AL HIMALAYA</h2></section>
+        <section class="imagene d-flex justify-content-center center"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsN1CXikwu_X86Hl1CKNIAs7awbKJ1OxrQHw&s" alt=""></section>
+        <section class="p-5"><p>
+            Nos complace enormemente recibirte en este espacio donde la magia de las montañas más imponentes del mundo se encuentra con la calidez de nuestra comunidad. En *Bienvenidos al Himalaya*, nos apasiona compartir contigo historias inspiradoras, aventuras inolvidables y el espíritu único de las tierras altas. Aquí encontrarás un rincón especial diseñado para conectar con la majestuosidad de la naturaleza, explorar las culturas fascinantes de la región y descubrir cómo puedes ser parte de un mundo lleno de posibilidades. Ya sea que estés buscando inspiración, planeando tu próxima travesía o simplemente disfrutando de un momento de tranquilidad, este es el lugar perfecto para dejarte llevar por la grandeza de lo auténtico y lo extraordinario. ¡Prepárate para vivir una experiencia única y para sentirte como en casa entre las cumbres más altas del planeta! 🌄❄️</p></section>
+    </main>
+    <footer>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="/index.html"><img src="https://prowly-prod.s3.eu-west-1.amazonaws.com/uploads/5726/assets/73418/large_doctoralia-mktpl-symbol-turquoise.png" alt="logo de la Pagina"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://web.rollingcodeschool.com/terminos-y-condiciones-2/" target="_blank">Terminos y Condiciones</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://web.rollingcodeschool.com/trabaja-con-nosotros/" target="_blank">Trabaja con Nosotros</a>
+                  </li>
+                </ul>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Donde Encontrarnos
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="https://www.instagram.com/rollingcodeschool/?hl=es" target="_blank">Instagram</a></li>
+                          <li><a class="dropdown-item" href="https://www.facebook.com/RollingCodeSchool/?locale=es_LA" target="_blank">Facebook</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" ><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.105917472264!2d-65.20974192470793!3d-26.836583276692647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d3ad7f30f1d%3A0xf8606cd659b8e3e4!2sRollingCode%20School!5e0!3m2!1ses-419!2sar!4v1736895116298!5m2!1ses-419!2sar" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></a></li>
+                        </ul>
+                      </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
