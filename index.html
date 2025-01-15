@@ -26,14 +26,126 @@
                     <a class="nav-link" href="/paginas/sobre-nosotros.html">Sobre nosotros</a>
                   </li>
                 </ul>
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Iniciar Sesion</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Registro</a>
-                      </li>
-                </ul>
+                      <!-- Button trigger modal -->
+      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Iniciar Sesion
+      </button>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content bg-secondary-subtle">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Iniciar Sesion</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <section>
+                <form>
+                   <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label"
+                    >Usuario/Email</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    required
+                    maxlength="25"
+                    minlength="7"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label"
+                    >Contraseña</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="exampleInputPassword1"
+                    required
+                    maxlength="15"
+                    minlength="7"
+                  />
+                </div>
+                <div class="mb-3 d-flex justify-content-center">
+                  <button type="submit" class="btn bg-body-tertiary mt-3">Iniciar Sesion</button>
+                </div>
+              </form>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+                    </li>
+                     <li class="nav-item">
+                      <!-- Button trigger modal -->
+      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+        Registrarse
+      </button>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content bg-secondary-subtle">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Registrarse</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="container-fluid">
+                <form>
+                  <div class="row mb-3">
+                    <label for="usuario1" class="col-12 col-form-label">Usuario</label>
+                    <div class="col-12">
+                      <input type="text" class="form-control" id="usuario1"
+                      required
+                      maxlength="20"
+                      minlength="5"
+                      placeholder="Victor Gonzalez">
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label for="correo1" class="col-12 col-form-label">Email</label>
+                    <div class="col-12">
+                      <input type="email" class="form-control" id="correo1"
+                      required
+                      maxlength="25"
+                      min="10"
+                      placeholder="victorg23@gmail.com">
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label for="contraseña1" class="col-12 col-form-label">Contraseña</label>
+                    <div class="col-12">
+                      <input type="password" class="form-control" id="contraseña1"
+                      required
+                      maxlength="10"
+                      minlength="7">
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label for="contraseña2" class="col-12 col-form-label">Repetir Contraseña</label>
+                    <div class="col-12">
+                      <input type="password" class="form-control" id="contraseña2"
+                      required
+                      maxlength="10"
+                      minlength="7">
+                    </div>
+                    <div class="boton d-flex justify-content-center">
+                    <button class="btn bg-body-tertiary mt-3">Crear cuenta</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
               </div>
             </div>
           </nav>
